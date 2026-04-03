@@ -1,0 +1,16 @@
+# Copy this to terraform.tfvars and fill in your values
+# Never commit terraform.tfvars to source control!
+
+region           = "ap-tokyo-1"
+
+compartment_ocid = "ocid1.compartment.oc1..xxxx"
+project_name     = "webdemo"
+
+# Oracle Linux 8 image OCID — find yours at:
+# https://docs.oracle.com/en-us/iaas/images/
+instance_image_ocid = "ocid1.image.oc1.ap-tokyo-1.xxxx"
+
+ssh_public_key = "ssh-rsa AAAA..."
+
+mysql_admin_username = "admin"
+mysql_admin_password = "Str0ng#Pass2024!"   # min 8 chars, upper+lower+digit+special
