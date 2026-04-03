@@ -3,19 +3,7 @@
 Provisions a complete web stack on Oracle Cloud Infrastructure using Always Free resources.
 This system will not incur any charges.
 
-```
-Internet
-   │ port 80
-   ▼
-[Public Load Balancer]  ← 10.0.1.0/24 (public subnet)
-   │ port 8080  (round-robin)
-   ├──► [App Instance 1]  ─┐
-   └──► [App Instance 2]  ─┤  10.0.2.0/24 (private app subnet)
-                            │  Instance Pool (2 VMs, 2 ADs)
-                            │ port 3306
-                            ▼
-                    [MySQL DB System]   10.0.3.0/24 (private DB subnet)
-```
+![](./system-diagram.png)
 
 ## Files
 
